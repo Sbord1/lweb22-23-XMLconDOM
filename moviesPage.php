@@ -10,8 +10,8 @@
 		.tablecenter{
 					padding: 10px;
 					border-spacing: 10px 0;
-				margin-right: auto;
-				margin-left: auto;}
+					margin-right: auto;
+					margin-left: auto;}
 		</style>
 	</head>
 
@@ -23,7 +23,7 @@
 			echo "<h1 style=\" text-align: center; color: #FDEBD0; margin-top: 20px \"> $filmCategoryInit </h1>";
 			}
 		else
-			echo "<h1 style=\" text-align: center; color: #FDEBD0; margin-top: 20px \"> azione </h1>";
+			echo "<h1 style=\" text-align: center; color: #FDEBD0; margin-top: 20px \"> azione </h1>"; //mi trovo nella prima pagina che corrisponde alla categoria azione
 	?>
 		
     <table class="tablecenter">
@@ -58,7 +58,7 @@ foreach ( file("movies.xml") as $node ) {
 		$filmCategoryInit = $_GET['next']; //prendo la categoria del film
 		$i = $_GET['index']; //prendo l'index del film da stampare
 } 	else {
-		$filmCategoryInit = "azione";
+		$filmCategoryInit = "azione"; //mi trovo nella prima pagina che corrisponde alla categoria azione
 		$i=0;
 } 
 	
@@ -73,7 +73,7 @@ foreach ( file("movies.xml") as $node ) {
 		$filmCategory = $film->getAttribute("category");
 	
 	
-		$id = $film->firstChild;
+		$id = $film->firstChild; //id primo child
 		$idNumber = $id->textContent;
 	
 		$director = $id->nextSibling;  //director secondo child
