@@ -15,7 +15,7 @@
 </xsd:element>
 
 <!--
-    <!ELEMENT film (id, director, title, year?, quantity, price)>
+    <!ELEMENT film (id, director, title, year?, quantity, price, imgPath)>
 
     <!ATTLIST film
                 category (avventura | azione | fantascienza | poliziesco | storico | thriller) #REQUIRED>
@@ -30,6 +30,7 @@
             <xsd:element ref="year" minOccurs="0" maxOccurs="1" />
             <xsd:element ref="quantity" minOccurs="0" maxOccurs="unbounded" />
             <xsd:element ref="price"/>
+            <xsd:element ref"imgPath"/>
         </xsd:sequence>
 
         <!-- Attributo category -->
@@ -58,6 +59,7 @@
 <!ELEMENT year (#PCDATA)>
 <!ELEMENT quantity (#PCDATA)>
 <!ELEMENT price (#PCDATA)>
+<!ELEMENT imgPath (#PCDATA)>
 -->
 
 <xsd:element name="id" type="xsd:integer" />
@@ -66,7 +68,8 @@
 <xsd:element name="year" type="xsd:integer" />
 <xsd:element name="quantity" type="xsd:integer" />
 <xsd:element name="price" type="xsd:decimal" />
-
+<xsd:element name="imgPath" type xsd:string" />
+    
 <xsd:complexType name="nomeCognome">
     <xsd:sequence>
         <xsd:element ref="name"/>
