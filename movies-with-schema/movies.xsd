@@ -30,7 +30,7 @@
             <xsd:element ref="year" minOccurs="0" maxOccurs="1" />
             <xsd:element ref="quantity" minOccurs="0" maxOccurs="unbounded" />
             <xsd:element ref="price"/>
-            <xsd:element ref"imgPath"/>
+            <xsd:element ref="imgPath"/>
         </xsd:sequence>
 
         <!-- Attributo category -->
@@ -68,7 +68,7 @@
 <xsd:element name="year" type="xsd:integer" />
 <xsd:element name="quantity" type="xsd:integer" />
 <xsd:element name="price" type="xsd:decimal" />
-<xsd:element name="imgPath" type xsd:string" />
+<xsd:element name="imgPath" type="xsd:string" />
     
 <xsd:complexType name="nomeCognome">
     <xsd:sequence>
