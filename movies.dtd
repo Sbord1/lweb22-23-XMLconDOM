@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- L'oggetto "movies" e' l'elemento radice del documento ed e' specificato come una sequenza di elementi "film" (0 o piu') -->
+<!ELEMENT movies (film*)>
+
+<!ELEMENT film (id, director, title, year?, quantity, price)>
+
+<!ATTLIST film
+            category (avventura | azione | fantascienza | poliziesco | storico | thriller) #REQUIRED>
+
+<!ELEMENT id (#PCDATA)>
+
+<!ELEMENT director (name, surname)>
+
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT surname (#PCDATA)>
+
+<!ELEMENT title (#PCDATA)>
+
+<!ELEMENT year (#PCDATA)>
+
+<!ELEMENT quantity (#PCDATA)>
+
+<!ELEMENT price (#PCDATA)>
