@@ -1,10 +1,5 @@
 <?php
 
-	
-	session_start();                // sempre prima di qualunque contenuto htmnl ...
-
-
-
 // variabili per titolo e categoria del film
 	$title=$_POST['title'];
 	$dbCategoria=$_POST['dbCategoria'];
@@ -43,7 +38,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 	<head>
-		<title>sessione con carrello della spesa: pagamento</title>
+		<title>Informazioni film</title>
 	</head>
 
 	<body style= "background-color: #34495E" >
