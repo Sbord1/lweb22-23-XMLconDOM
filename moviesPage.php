@@ -51,7 +51,7 @@ foreach ( file("movies.xml") as $node ) {
     $lunghezza = $movies->length;
    	
    	// se questa pagina e' stata chiamata con "next=qualchecosa" nella
-	// uri di chiamata, vuol dire che avevamo gia' stampato qualcosa e riprendiamo da lì;
+	// uri di chiamata, vuol dire che avevamo gia' stampato qualcosa e riprendiamo da lÃ¬;
 
 
    	if ( isset($_GET['next']) ) { 
@@ -63,10 +63,13 @@ foreach ( file("movies.xml") as $node ) {
 } 
 	
 
+	$elenco = "";
+	$counter = 0;
+
 	//ciclo per ottenere info su tutti i film di una stessa categoria
     while ($turnPage==False) {
 	
-		$film = $movies->item($i); //è uno dei record
+		$film = $movies->item($i); //Ã¨ uno dei record
 		$filmCategory = $film->getAttribute("category");
 	
 	
@@ -123,7 +126,7 @@ foreach ( file("movies.xml") as $node ) {
 			break;
 		}
 		
-		//serve per capire quando fermarsi altrimenti nell'ultima pagina l'if di riga 92 è sempre valido e $turnPage mai =True
+		//serve per capire quando fermarsi altrimenti nell'ultima pagina l'if di riga 92 Ã¨ sempre valido e $turnPage mai =True
 		if ($i>$lunghezza-1){ 
 			break;}
 
@@ -137,8 +140,8 @@ foreach ( file("movies.xml") as $node ) {
     	
     <?php
 // quando finisce di stampare film di una categoria stampa un link per andare alla categoria successiva
-// il link della prossima pagina sarà del tip PHP_SELF?next=$filmCategory&index=$i
-// dove $filmCategory sarà la categoria dei film da stampare e $i è l'indice da cui iniziare a stampare
+// il link della prossima pagina sarÃ  del tip PHP_SELF?next=$filmCategory&index=$i
+// dove $filmCategory sarÃ  la categoria dei film da stampare e $i Ã¨ l'indice da cui iniziare a stampare
 // otteniamo queste informazioni con $_GET (vedi riga 50)
 
 if ( $filmCategoryInit != "thriller" ) {
