@@ -37,7 +37,8 @@ N.B. Il file "connection.php" non è incluso perchè il database ancora non è s
 
 - "connection.php": script che effettua la connessione al database (è incluso nei vari script che si collegano al database)
 
-- "movies.php": script che si collega al database e crea un file xml chiamato "movies.xml"
+-  ** "movies.php": script che si collega al database e crea un file xml chiamato "movies.xml" **
+**NB questo script deve essere eseguito per primo perchè genera il file xml senza il quale gli altri script potrebbero non funzionare, abbiamo optato per questa scelta per far notare come lo script crei automaticamente il "movies.xml"**
 
 - "movies.xml": generato automaticamente dallo script precedente, presenta la struttura utilizzata e referenzia un file chiamato "movies.dtd" 
 
