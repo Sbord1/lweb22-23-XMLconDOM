@@ -13,6 +13,19 @@ Funzionamento dell'applicazione
 L'applicazione php che gestisce una base di dati è stata realizzata prendendo ispirazione dagli esercizi "temperature.2.php"
 
 ------------------------------------------------------------------------------------------------------------------------------------------
+Tecniche impiegate
+
+- Definizione di una DTD e di uno Schema per un documento XML
+
+- Associazione di un documento XML ad una DTD / ad uno Schema
+
+- Produzione di un documento XML tramite accesso ai dati in un database My SQL e creazione del documento tramite le funzionalità DOM per XML, disponibili in PHP.
+
+- Presentazione di un documento XML tramite lettura dei dati in esso presenti attraverso le funzionalità DOM
+
+- Verifica della correttezza della forma (well-formed) e della validità del documento XML sia relativamente alla DTD che allo schema tramite l'applicazione XML Copy Editor.
+
+------------------------------------------------------------------------------------------------------------------------------------------
 Spiegazione file e directory
 
 - Cartella "locandine": contiene le varie locandine dei film suddivise per categoria
