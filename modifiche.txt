@@ -1,13 +1,15 @@
-in "movies.php" ho aggiunto la possibilita di avere imgPath nel file xml. 
+-In "movies.php" ho aggiunto la possibilita di avere imgPath nel file xml. 
 
-File xml modificato quindi
+-File xml modificato quindi
 
-File movies.dtd aggiunto elemento imgPath
+-File movies.dtd aggiunto elemento imgPath
 
-File movies.xsd aggiungo imgPath
+-File movies.xsd aggiungo imgPath
 
-Creato moviesPage.php che mostra film in tabella
+-Creato moviesPage.php che mostra film in tabella
 
-Aggiunti movies rimanenti in install.php
+-Aggiunti movies rimanenti in install.php
 
-Creato filmDescrizione.php, semplice pagina in cui ci da informazioni sul film
+-Creato filmDescrizione.php, semplice pagina in cui ci da informazioni sul film
+
+-Creato README.txt (controlla se va bene)
