@@ -3,7 +3,7 @@
 <!-- L'oggetto "movies" e' l'elemento radice del documento ed e' specificato come una sequenza di elementi "film" (0 o piu') -->
 <!ELEMENT movies (film*)>
 
-<!ELEMENT film (id, director, title, year?, quantity, price)>
+<!ELEMENT film (id, director, title, year?, quantity, price, imgPath)>
 
 <!ATTLIST film
             category (avventura | azione | fantascienza | poliziesco | storico | thriller) #REQUIRED>
@@ -22,3 +22,5 @@
 <!ELEMENT quantity (#PCDATA)>
 
 <!ELEMENT price (#PCDATA)>
+
+<!ELEMENT imgPath (#PCDATA)>
