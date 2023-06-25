@@ -5,3 +5,4 @@ Si tratta di un homework in cui XML viene usato in applicazioni scritte in php.
 
 Per manipolare i file e gestire gli elementi XML, si usano le funzionalità DOM per XML, disponibili in PHP.
 
+movies.php costruisce un file xml
